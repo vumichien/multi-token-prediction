@@ -1,0 +1,127 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "checkpoint": "C:\\Project\\personal\\TowardDataScience\\multi-token-prediction\\checkpoints\\finetune-smollm2-mtp-heads\\heads-best.safetensors",
+  "heldout_examples": 288,
+  "heldout_prompts": 72,
+  "dev_examples_excluded": 32,
+  "max_length": 768,
+  "head_offsets": [
+    2,
+    3,
+    4
+  ],
+  "note": "t+1 is the frozen base LM head, not a trained head. It is the reference the trained heads are compared against. Scores are token-weighted over `tokens_scored` positions, and `dev_examples_excluded` samples were withheld because training picked the checkpoint on them. `heldout_examples` counts sampled completions; `heldout_prompts` is the number of distinct prompts behind them, which is the honest unit of independent evidence.",
+  "overall": {
+    "t+1": {
+      "top1_accuracy": 0.8371,
+      "cross_entropy": 0.5561,
+      "tokens_scored": 64538
+    },
+    "t+2": {
+      "top1_accuracy": 0.5277,
+      "cross_entropy": 2.3431,
+      "tokens_scored": 64538
+    },
+    "t+3": {
+      "top1_accuracy": 0.3832,
+      "cross_entropy": 3.4619,
+      "tokens_scored": 64538
+    },
+    "t+4": {
+      "top1_accuracy": 0.2934,
+      "cross_entropy": 4.159,
+      "tokens_scored": 64538
+    }
+  },
+  "by_category": {
+    "code": {
+      "t+1": {
+        "top1_accuracy": 0.9353,
+        "cross_entropy": 0.1984,
+        "tokens_scored": 14927
+      },
+      "t+2": {
+        "top1_accuracy": 0.7334,
+        "cross_entropy": 1.1857,
+        "tokens_scored": 14927
+      },
+      "t+3": {
+        "top1_accuracy": 0.6057,
+        "cross_entropy": 1.9656,
+        "tokens_scored": 14927
+      },
+      "t+4": {
+        "top1_accuracy": 0.5197,
+        "cross_entropy": 2.5368,
+        "tokens_scored": 14927
+      }
+    },
+    "creative": {
+      "t+1": {
+        "top1_accuracy": 0.7739,
+        "cross_entropy": 0.7936,
+        "tokens_scored": 19146
+      },
+      "t+2": {
+        "top1_accuracy": 0.3612,
+        "cross_entropy": 3.2863,
+        "tokens_scored": 19146
+      },
+      "t+3": {
+        "top1_accuracy": 0.2191,
+        "cross_entropy": 4.6346,
+        "tokens_scored": 19146
+      },
+      "t+4": {
+        "top1_accuracy": 0.1383,
+        "cross_entropy": 5.4281,
+        "tokens_scored": 19146
+      }
+    },
+    "instruction": {
+      "t+1": {
+        "top1_accuracy": 0.7972,
+        "cross_entropy": 0.6991,
+        "tokens_scored": 20001
+      },
+      "t+2": {
+        "top1_accuracy": 0.4738,
+        "cross_entropy": 2.5793,
+        "tokens_scored": 20001
+      },
+      "t+3": {
+        "top1_accuracy": 0.3074,
+        "cross_entropy": 3.8536,
+        "tokens_scored": 20001
+      },
+      "t+4": {
+        "top1_accuracy": 0.2107,
+        "cross_entropy": 4.5625,
+        "tokens_scored": 20001
+      }
+    },
+    "structured_json": {
+      "t+1": {
+        "top1_accuracy": 0.8887,
+        "cross_entropy": 0.3582,
+        "tokens_scored": 10464
+      },
+      "t+2": {
+        "top1_accuracy": 0.6419,
+        "cross_entropy": 1.8166,
+        "tokens_scored": 10464
+      },
+      "t+3": {
+        "top1_accuracy": 0.5108,
+        "cross_entropy": 2.7018,
+        "tokens_scored": 10464
+      },
+      "t+4": {
+        "top1_accuracy": 0.4123,
+        "cross_entropy": 3.3796,
+        "tokens_scored": 10464
+      }
+    }
+  },
+  "peak_allocated_mb": 4654.8
+}

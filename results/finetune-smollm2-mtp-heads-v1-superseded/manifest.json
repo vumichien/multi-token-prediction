@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "artifacts": {
+    "raw-results.json": {
+      "sha256": "a02ca6a26bead21b88bc15cf6215427944d3be780c6152f6fee8c6508e63e5ef",
+      "bytes": 38940
+    },
+    "summary.csv": {
+      "sha256": "a6c5b0f3cae8cd7e66b6feed63e423c9f91b0c4f601d0308d1cc5fe0f629ddd3",
+      "bytes": 3576
+    }
+  }
+}

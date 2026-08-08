@@ -1,0 +1,22 @@
+[
+  {
+    "id": "structured-json",
+    "category": "structured_json",
+    "text": "Return only JSON with keys product, price_usd, and in_stock for a waterproof notebook."
+  },
+  {
+    "id": "code-refactor",
+    "category": "code",
+    "text": "Write a Python function that removes duplicate dictionaries from a list while preserving order."
+  },
+  {
+    "id": "instruction-following",
+    "category": "instruction",
+    "text": "Explain in three bullet points how to back up a PostgreSQL database before a schema migration."
+  },
+  {
+    "id": "creative-brief",
+    "category": "creative",
+    "text": "Write a short opening paragraph for a sci-fi story about a botanist on Europa."
+  }
+]

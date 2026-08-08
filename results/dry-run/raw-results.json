@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "status": "dry_run",
+  "config": {
+    "target_model": "google/gemma-4-E2B-it",
+    "assistant_model": "google/gemma-4-E2B-it-assistant",
+    "prompts_path": "data\\prompts.json",
+    "output_dir": "results\\dry-run",
+    "max_new_tokens": 64,
+    "warmup_runs": 1,
+    "timed_runs": 3,
+    "policy": "auto"
+  },
+  "environment": {
+    "captured_at_utc": "2026-07-20T09:01:54.691108+00:00",
+    "platform": {
+      "system": "Windows",
+      "release": "10",
+      "version": "10.0.26200",
+      "machine": "",
+      "python": "3.11.11"
+    },
+    "packages": {
+      "accelerate": "1.14.0",
+      "bitsandbytes": "0.49.2",
+      "pandas": "3.0.3",
+      "pillow": "12.3.0",
+      "psutil": "7.2.2",
+      "pytest": "9.1.1",
+      "torch": "2.11.0+cu128",
+      "torchvision": "0.26.0+cu128",
+      "transformers": "5.14.1"
+    },
+    "models": {
+      "target": "google/gemma-4-E2B-it",
+      "assistant": "google/gemma-4-E2B-it-assistant"
+    },
+    "storage": {
+      "disk_total_gb": 1861.874,
+      "disk_free_gb": 298.169
+    },
+    "system_memory": {
+      "total_gb": 31.925,
+      "available_gb": 12.075,
+      "cpu_count": 24
+    },
+    "torch": {
+      "available": true,
+      "cuda_available": true,
+      "torch_cuda_version": "12.8",
+      "default_dtype": "torch.float32",
+      "gpu": {
+        "name": "NVIDIA GeForce RTX 3080",
+        "total_vram_gb": 9.999,
+        "compute_capability": "8.6"
+      }
+    }
+  },
+  "prompts": [
+    {
+      "id": "structured-json",
+      "category": "structured_json",
+      "text": "Return only JSON with keys product, price_usd, and in_stock for a waterproof notebook."
+    },
+    {
+      "id": "code-refactor",
+      "category": "code",
+      "text": "Write a Python function that removes duplicate dictionaries from a list while preserving order."
+    },
+    {
+      "id": "instruction-following",
+      "category": "instruction",
+      "text": "Explain in three bullet points how to back up a PostgreSQL database before a schema migration."
+    },
+    {
+      "id": "creative-brief",
+      "category": "creative",
+      "text": "Write a short opening paragraph for a sci-fi story about a botanist on Europa."
+    }
+  ],
+  "records": [],
+  "summaries": [],
+  "errors": []
+}

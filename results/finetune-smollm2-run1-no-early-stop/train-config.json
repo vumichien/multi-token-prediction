@@ -1,0 +1,26 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "num_heads": 3,
+  "head_offsets": [
+    2,
+    3,
+    4
+  ],
+  "trainable_parameters": 314578944,
+  "max_length": 768,
+  "batch_size": 1,
+  "grad_accum": 8,
+  "effective_batch": 8,
+  "lr": 0.0005,
+  "weight_decay": 0.0,
+  "warmup_fraction": 0.03,
+  "max_steps": 11000,
+  "max_minutes": 110.0,
+  "optimizer": "adamw8bit",
+  "seed": 20260725,
+  "train_samples": 1440,
+  "heldout_samples": 160,
+  "train_examples": 1440,
+  "heldout_fraction": 0.1,
+  "samples_path": "data\\finetune\\samples.jsonl"
+}
